@@ -1,0 +1,31 @@
+{{>partials/header}}
+
+<body>
+
+<h1>Título</h1>
+<hr/>
+<!--Fazer o site retornar uma resposta de idade-->
+{{#showAge}}
+você é maior de idade
+{{/showAge}}
+<!-- FAZER LISTA NO MUSTACHE FORMA 1 -->
+<h1>Produtos</h1>
+
+    <ul>
+    {{#products}}
+    <li> {{title}} - {{price}} </li>
+
+    {{/products}}
+
+    </ul>
+
+<!--FAZER LISTA NO MUSTACHE FORMA 2-->
+    <hr>
+    <h1> frases </h1>
+
+    {{#frases}}
+    <li>{{.}}</li>
+    {{/frases}}
+
+
+    {{>partials/footer}}

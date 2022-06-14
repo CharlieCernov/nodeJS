@@ -1,0 +1,42 @@
+<!--esse é o código pra botar a referência na página-->{{>partials/header}}
+<!--é necessário você posicionar ele na página, esse é header então ele está no início-->
+<link href="css/nome.css" rel="stylesheet">
+
+<div>
+
+<h2>Digite seu nome, idade e endereço</h2>
+
+<form method='get'>
+<input type='text' name='nome' placeholder='Digite seu nome' required/><br/>
+
+<br>
+
+<form method='get'>
+<input type='number' name='number' placeholder='Digite sua idade' required/><br/>
+
+<br>
+
+<form method='get'>
+<input type='text' name='adress' placeholder='Digite seu endereço' required/><br/>
+<hr>
+<input type='submit' value='Enviar'/>
+</form>
+
+
+{{#nome}}
+<strong>Seus dados abaixo</strong>
+<br>
+<br>
+<h3>Seu nome é: <strong>{{nome}}</strong>
+<br>
+<h3>Sua idade é: <strong>{{number}}</strong>
+<br>
+<h3>Seu endereço é: <strong>{{adress}}</strong>
+<br>
+
+</div>
+
+{{/nome}}
+
+<!--esse é o código pra botar a referência do footer na página-->{{>partials/footer}}
+<!--é necessário você posicionar ele na página, esse é footer então ele está no final da página-->
